@@ -3,18 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PlayerComponent } from 'src/components/player/player.component';
+import { HomeModule } from './dashboard/modules/modules.module';
+import { SharedModule } from '../shared/modules/modules.module';
+import { PlayerComponent } from './core/components/player/player.component';
+import { RouterModule } from '@angular/router';
+import { SidebarComponent } from './src/app/core/components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    PlayerComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule,
+    SharedModule,
+    AppComponent,
+    PlayerComponent,
+    RouterModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule { }

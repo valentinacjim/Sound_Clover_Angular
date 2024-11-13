@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+// styles.scss
+
+$app-container-padding: 20px;
+
+.app-container {
+  display: flex;
+}
+
+.content-container {
+  margin-left: 200px; // Mismo ancho que la barra lateral
+  padding: $app-container-padding;
+  width: 100%;
+}
