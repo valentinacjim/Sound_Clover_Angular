@@ -7,22 +7,22 @@ import { HomeModule } from './dashboard/modules/modules.module';
 import { SharedModule } from '../shared/modules/modules.module';
 import { PlayerComponent } from './core/components/player/player.component';
 import { RouterModule } from '@angular/router';
-import { SidebarComponent } from './src/app/core/components/sidebar/sidebar.component';
+import { SidebarComponent } from './core/components/sidebar/sidebar.component';
+import { HomeComponent } from './dashboard/home/home.component';
 
 @NgModule({
   declarations: [
-    SidebarComponent
+    SidebarComponent,
+    AppComponent,
+    PlayerComponent,
+    // HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
-    SharedModule,
-    AppComponent,
-    PlayerComponent,
     RouterModule
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
