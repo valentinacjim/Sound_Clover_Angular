@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeModule } from './dashboard/modules/modules.module';
+import { DashboardModule } from './dashboard/modules/modules.module';
 import { SharedModule } from '../shared/modules/modules.module';
 import { PlayerComponent } from './core/components/player/player.component';
 import { RouterModule } from '@angular/router';
@@ -15,12 +15,12 @@ import { HomeComponent } from './dashboard/home/home.component';
     SidebarComponent,
     AppComponent,
     PlayerComponent,
-    // HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
