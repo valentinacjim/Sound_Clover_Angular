@@ -20,7 +20,8 @@ import { HomeComponent } from './dashboard/home/home.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    DashboardModule
+    DashboardModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

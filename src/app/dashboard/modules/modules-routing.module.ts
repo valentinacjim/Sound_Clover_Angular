@@ -4,8 +4,11 @@ import { HomeComponent } from '../home/home.component';
 
 const routes: Routes = [
   {
-    path: '', // Ruta base para este módulo
+    path: 'dashboard', // Ruta base para este módulo
     component: HomeComponent
+  },
+  {
+    path: '', redirectTo: 'dashboard', pathMatch: 'full'
   }
 ];
 

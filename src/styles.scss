@@ -1,13 +1,12 @@
 // styles.scss
 
-$app-container-padding: 20px;
 
 .app-container {
   display: flex;
+  padding: 0;
 }
 
 .content-container {
-  margin-left: 200px; // Mismo ancho que la barra lateral
-  padding: $app-container-padding;
   width: 100%;
+  padding: 0;
 }
